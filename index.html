@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CONVERSOR DE UNIDADE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- defer -> carrega o html antes do script(nao precisa por o script no final do body)-->
+</head>                                                                                                                     
+<body>
+    <main class="container">
+        <h1>CONVERSOR DE UNIDADES</h1>
+        <section class="input-data">
+            <label for="input">DIGITE O VALOR:</label>
+            <input type="number" id="input" name="input" placeholder="0"/>
+        </section>
+        <section class="input-data">
+            <label for="from">DE:</label>
+           <select name="from" id="from">
+                <option value="m">METROS</option>
+                <option value="km">QUILÔMETROS</option>
+                <option value="cm">CENTÍMETROS</option>
+                <option value="mm">MILÍMETROS</option>
+           </select>
+        </section>
+        <section class="input-data">
+            <label for="from">PARA:</label>
+           <select name="to" id="to">
+                <option value="m">METROS</option>
+                <option value="km">QUILÔMETROS</option>
+                <option value="cm">CENTÍMETROS</option>
+                <option value="mm">MILÍMETROS</option>
+           </select>
+        </section>
+        <button id="btn-convert" onclick="convert()">Converter</button>
+        <section>
+            <label for="output">Resultado</label>
+            <input type="text" id="output" readonly/>
+            <article id = "menssagem"></article>
+        </section>
+    </main>
+</body>
+</html>
